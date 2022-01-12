@@ -1,0 +1,62 @@
+{
+  "name": "view-npm-docs",
+  "displayName": "view-npm-docs",
+  "description": "Open npm package docs from vscode.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "publisher": "himanshumehta1114",
+  "author": {
+    "name": "himanshumehta1114"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/himanshumehta1114/vscode-view-npm-docs"
+  },
+  "bugs": {
+    "url": "https://github.com/himanshumehta1114/vscode-view-npm-docs",
+    "email": "himanshumehta1114@gmail.com"
+  },
+  "keywords": [
+    "docs",
+    "npm docs",
+    "npm documentation",
+    "dependency docs",
+    "js docs"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onCommand:view-npm-docs.listDeps"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "view-npm-docs.listDeps",
+        "title": "view-npm-docs: View dependencies list"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.46.0",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  },
+  "dependencies": {
+    "find-package-json": "^1.2.0"
+  }
+}
