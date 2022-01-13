@@ -2,7 +2,8 @@
 
 > Open npm package docs from vscode.
 
-![The extension in-action](https://github.com/himanshumehta1114/vscode-js-playground/blob/master/js-playground.gif?raw=true)
+![The extension in-action](https://github.com/himanshumehta1114/vscode-view-npm-docs/blob/master/view-npm-docs.gif?raw=true)
+
 
 ## Motivation
 
